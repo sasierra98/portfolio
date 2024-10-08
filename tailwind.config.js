@@ -9,7 +9,14 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    colors: {
+      "button": "#0E185F"
+    },
+    extend: {
+      buttonShadow: {
+        "sm": "0 15px 30px rgba(255, 255, 255, 0.5)"
+    }
+    },
   },darkMode: "class",
   plugins: [nextui()],
 }

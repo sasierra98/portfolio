@@ -1,6 +1,5 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-import { motion } from 'framer-motion';
 // import {AcmeLogo} from "./AcmeLogo.js";
 
 export const AcmeLogo = () => (
@@ -31,11 +30,11 @@ export const TopNavbar = () => {
   ];
 
   return (
-    <motion.nav
+    <nav
       // className="navbar navbar-expand-lg wrapper__navbar position-relative z-3"
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.3 }}
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="300"
     >
     <Navbar className="flex items-center " onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="mb-0">
@@ -93,7 +92,7 @@ export const TopNavbar = () => {
         ))}
       </NavbarMenu>
     </Navbar>
-    </motion.nav>
+    </nav>
   );
 }
 
