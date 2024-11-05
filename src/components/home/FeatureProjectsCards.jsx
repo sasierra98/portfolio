@@ -1,19 +1,19 @@
 export const FeatureProjectsCards = () => {
   const projects = [
     {
-      title: "Real Estate Agency Website",
-      image: "/portfolio/MOCKUP.png",
-      description: "UIUX Design",
+      title: "Ekom",
+      image: "/portfolio/projects/ekom.png",
+      description: "AI & ML Development",
     },
     {
-      title: "Property Agent",
-      image: "/portfolio/Artboard.png",
-      description: "UIUX Design & Development",
+      title: "Writerly",
+      image: "/portfolio/projects/writerly.png",
+      description: "AI & ML Development",
     },
     {
-      title: "Cycling Tracker App",
-      image: "/portfolio/MOCKUP (1) 1.png",
-      description: "UIUX Design & Development",
+      title: "The Unbaised Journal",
+      image: "/portfolio/projects/tuj.png",
+      description: "AI Development",
     },
   ];
 

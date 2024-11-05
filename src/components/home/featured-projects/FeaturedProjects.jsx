@@ -23,12 +23,12 @@ export const FeaturedProjects = () => {
             <Button 
               href="#!"
               // className="d-inline-block bold font__size--14 text__14-1024 btn btn__outlined--blue color__blue no__opacity shadow rounded-0"
-              variant="secondary"
+              // variant="secondary"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1000"
             >
-              Show more projects
+                
             </Button>
           </div>
         </div>
