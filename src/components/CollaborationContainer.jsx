@@ -9,23 +9,15 @@ export const CollaborationContainer = () => (
         data-aos-duration="1000"
         data-aos-delay="200"
       >
-        <img
-          src="/portfolio/Mask group (1).png"
-          className="path__5"
-          alt=""
-        />
+        <img src="/portfolio/Mask group (1).png" className="path__5" alt="" />
         <div className="text-center position-relative z-2">
-          <h2
-            className="bold font__size--45 text__45-1024 text__45-md color__white mb-4"
-          >
+          <h2 className="bold font__size--45 text__45-1024 text__45-md color__white mb-4">
             Have a project idea to <br className="d-none d-sm-block" />
             collaborate with?
           </h2>
-          <Button>
-            Contact Us
-          </Button>
+          <Button>Contact Me</Button>
         </div>
       </div>
     </div>
   </section>
-)
+);
