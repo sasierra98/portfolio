@@ -1,4 +1,4 @@
-import { Button as BaseButton} from "@nextui-org/react";
+import { Button as BaseButton } from "@nextui-org/react";
 
 export const Button = (props) => {
   if (props.variant === "secondary") {
@@ -15,11 +15,11 @@ export const Button = (props) => {
   }
   return (
     <button
-      className="bg-white text-sm text-button rounded-0 mb__5 mb__sm-0 px-[45px] py-[17px] font-bold btn__white shadow" 
-      type="button" 
+      className="bg-white text-sm text-button rounded-0 mb__5 mb__sm-0 px-[45px] py-[17px] font-bold btn__white shadow"
+      type="button"
       {...props}
     >
       {props.children}
     </button>
   );
-}
+};

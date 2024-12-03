@@ -5,7 +5,7 @@ const servicesProvidedData = [
     // project: "4 Project",
     dataAosDelay: 200,
   },
-  
+
   {
     img: "/portfolio/Frame (7).png",
     title: "Backend Development",
@@ -43,33 +43,44 @@ export const ServicesProvided = () => {
                   data-aos-duration="1000"
                   data-aos-delay="400"
                 >
-                  I offer a range of web development services to meet your needs:
+                  I offer a range of web development services to meet your
+                  needs:
                   <br className="d-none d-xl-block" />
-                  <strong>Frontend Development:</strong> Creating visually appealing and user-friendly interfaces using the latest technologies and design principles
+                  <strong>Frontend Development:</strong> Creating visually
+                  appealing and user-friendly interfaces using the latest
+                  technologies and design principles
                   <br className="d-none d-xl-block" />
-                  <strong>Backend Development:</strong> Building robust and scalable server-side applications to ensure your website runs smoothly and efficiently.
+                  <strong>Backend Development:</strong> Building robust and
+                  scalable server-side applications to ensure your website runs
+                  smoothly and efficiently.
                   <br className="d-none d-xl-block" />
-                  <strong>Web Integrations:</strong> Integrating various web services and APIs to enhance the functionality and connectivity of your website.
+                  <strong>Web Integrations:</strong> Integrating various web
+                  services and APIs to enhance the functionality and
+                  connectivity of your website.
                 </p>
               </div>
               <div className="col-md-6 my-auto">
-                  {servicesProvidedData.map((data, index) => (
-                    <div
-                      className="w-100"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay={data.dataAosDelay}
-                      key={index}
-                    >
+                {servicesProvidedData.map((data, index) => (
+                  <div
+                    className="w-100"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay={data.dataAosDelay}
+                    key={index}
+                  >
                     <div className="wrapper__list-experience mb-4 d-flex align-items-center">
-                      <img src={data.img} className="flex-shrink-0 w-12" alt="" />
+                      <img
+                        src={data.img}
+                        className="flex-shrink-0 w-12"
+                        alt=""
+                      />
                       <div className="desc ml-3">
                         <h5 className="bold font__size--24 text__24-1024 text__24-md mb-1">
-                            {data.title}
-                          </h5>
+                          {data.title}
+                        </h5>
                         <p className="mb-0 semi-bold font__size--12 text__12-md color__gray-1">
-                            {data.project}
-                          </p>
+                          {data.project}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -82,4 +93,3 @@ export const ServicesProvided = () => {
     </section>
   );
 };
-

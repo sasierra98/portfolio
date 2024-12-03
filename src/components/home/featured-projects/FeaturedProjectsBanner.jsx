@@ -1,7 +1,7 @@
 const svgStyle = {
-  width: '100%',
-  height: 'auto',
-  maxWidth: '100px', // Adjust this value as needed
+  width: "100%",
+  height: "auto",
+  maxWidth: "100px", // Adjust this value as needed
 };
 
 const SvgComponent = (props) => (
@@ -45,7 +45,7 @@ const SvgComponent = (props) => (
       />
     </g>
   </svg>
-)
+);
 // const SvgComponent = (props) => (
 //   <svg
 //     xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +123,7 @@ export const FeaturedProjectsBanner = () => (
   <section className="pt-0 position-relative z-2">
     <div className="container">
       <div className="wrapper__brand bg__black d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-xl-between align-items-center">
-        {bannerData.map((data, index) => (
+        {bannerData.map((data, index) =>
           data?.component ? (
             <data.component key={index} />
           ) : (
@@ -135,9 +135,9 @@ export const FeaturedProjectsBanner = () => (
               data-aos-delay={data.dataAosDelay}
               key={index}
             />
-          )
-        ))}
+          ),
+        )}
       </div>
     </div>
   </section>
-)
+);

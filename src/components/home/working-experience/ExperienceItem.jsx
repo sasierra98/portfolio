@@ -1,4 +1,12 @@
-export const ExperienceItem = ({ company, role, period, location, description, logo, delay }) => (
+export const ExperienceItem = ({
+  company,
+  role,
+  period,
+  location,
+  description,
+  logo,
+  delay,
+}) => (
   <>
     <div
       className="row wrapper__accordion justify-content-center"
@@ -9,9 +17,15 @@ export const ExperienceItem = ({ company, role, period, location, description, l
       <div className="col-md-5 head col-xl-4 my-auto">
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
-            <img src={logo} className="flex-shrink-0 w-[64px] h-auto rounded-md" alt={company} />
+            <img
+              src={logo}
+              className="flex-shrink-0 w-[64px] h-auto rounded-md"
+              alt={company}
+            />
             <div className="desc ml-3">
-              <h5 className="bold font__size--24 text__24-1024 mb-1">{company}</h5>
+              <h5 className="bold font__size--24 text__24-1024 mb-1">
+                {company}
+              </h5>
               <p className="mb-0 bold font__size--12 text__12-md color__gray-1">
                 {role}
               </p>
@@ -23,7 +37,11 @@ export const ExperienceItem = ({ company, role, period, location, description, l
               </p>
             </div>
           </div>
-          <img src="/portfolio/Vector-(1).png" className="d-block d-md-none arrow" alt="" />
+          <img
+            src="/portfolio/Vector-(1).png"
+            className="d-block d-md-none arrow"
+            alt=""
+          />
         </div>
       </div>
       <div className="col-md-7 description offset-xl-1 my-auto">
@@ -32,6 +50,11 @@ export const ExperienceItem = ({ company, role, period, location, description, l
         </p>
       </div>
     </div>
-    <hr className="hr__line my-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay={delay + 200} />
+    <hr
+      className="hr__line my-5"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay={delay + 200}
+    />
   </>
 );

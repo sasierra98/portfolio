@@ -24,10 +24,13 @@ export const Hero = () => (
             id sed senectus dolor cursus sed. Ullamcorper tellus ac cras
             nec, pretium <br className="d-none d-xl-block" />
             laoreet duis. */}
-            I’m a Full Stack Developer with 4+ years of experience in Python and JavaScript. 
-            Proficient in frameworks like Django, Flask, React, and Next.js, I specialize in creating robust web applications. 
-            I also have expertise in AWS services and Linux server administration, delivering secure and efficient solutions.
-            <br className="d-none d-xl-block" /><br className="d-none d-xl-block" />
+            I’m a Full Stack Developer with 4+ years of experience in Python and
+            JavaScript. Proficient in frameworks like Django, Flask, React, and
+            Next.js, I specialize in creating robust web applications. I also
+            have expertise in AWS services and Linux server administration,
+            delivering secure and efficient solutions.
+            <br className="d-none d-xl-block" />
+            <br className="d-none d-xl-block" />
             Let’s connect and explore how I can contribute to your next project!
           </p>
           <a
@@ -36,10 +39,7 @@ export const Hero = () => (
             data-aos-duration="1000"
             data-aos-delay="800"
           >
-            <Button
-            >
-              Contact Us
-            </Button>
+            <Button>Contact Me</Button>
           </a>
         </div>
         <div className="col-md-5 text-center text-md-left my-auto">
