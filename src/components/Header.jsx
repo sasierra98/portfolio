@@ -31,7 +31,8 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
 
-  const checkIsActive = (href) => location.pathname === href || location.pathname === href + "/";
+  const checkIsActive = (href) =>
+    location.pathname === href || location.pathname === href + "/";
 
   return (
     <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
@@ -86,7 +87,7 @@ export const Header = () => {
                   {item.name}
                 </Link>
               </NavbarMenuItem>
-            )
+            );
           })}
         </NavbarMenu>
       </Navbar>

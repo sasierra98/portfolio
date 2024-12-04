@@ -122,7 +122,7 @@ const bannerData = [
 export const FeaturedProjectsBanner = () => (
   <section className="pt-0 position-relative z-2">
     <div className="container">
-      <div className="wrapper__brand bg__black d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-xl-between align-items-center">
+      <div className="wrapper__brand bg__black grid grid-flow-row auto-rows-fr justify-center md:grid md:grid-flow-col md:grid-cols-4 md:justify-items-center align-items-center">
         {bannerData.map((data, index) =>
           data?.component ? (
             <data.component key={index} />
