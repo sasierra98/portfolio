@@ -7,8 +7,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
-  NavbarBrand,
 } from "@nextui-org/react";
 import { useLocation } from "react-router-dom";
 import { paths } from "../routes";
@@ -21,17 +19,20 @@ const menuItems = [
   },
   {
     name: "About Me",
-    href: paths.portfolio,
+    href: paths.aboutMenu,
   },
   {
     name: "Project",
-    href: paths.portfolio,
+    href: paths.projectMenu,
   },
 ];
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
+
+  const checkIsActive = (href) => location.pathname === href || location.pathname === href + "/";
+
   return (
     <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
       <Navbar
@@ -39,10 +40,10 @@ export const Header = () => {
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
       >
-        <NavbarContent>
+        <NavbarContent className="pl-2 pt-3">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="text-white backdrop-blur-sm backdrop-saturate-150 sm:hidden"
+            className="text-white backdrop-blur-sm backdrop-saturate-150 ml-0 pl-0 sm:hidden"
             icon={
               isMenuOpen ? (
                 <AiOutlineClose size={36} />
@@ -57,7 +58,7 @@ export const Header = () => {
           justify="center"
         >
           {menuItems.map((item, index) => {
-            const isActive = location.pathname === item.href;
+            const isActive = checkIsActive(item.href);
             return (
               <NavbarItem key={`${item.name}-${index}`} isActive={isActive}>
                 <Link
@@ -73,24 +74,20 @@ export const Header = () => {
           })}
         </NavbarContent>
         <NavbarMenu>
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item.name}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === menuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                className="w-full"
-                href={item.href}
-                size="lg"
-              >
-                {item.name}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          {menuItems.map((item, index) => {
+            const isActive = checkIsActive(item.href);
+            return (
+              <NavbarMenuItem key={`${item.name}-${index}`}>
+                <Link
+                  className={`w-full ${isActive ? "text-primary" : "text-dark"}`}
+                  href={item.href}
+                  size="lg"
+                >
+                  {item.name}
+                </Link>
+              </NavbarMenuItem>
+            )
+          })}
         </NavbarMenu>
       </Navbar>
     </nav>
