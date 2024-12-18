@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Button } from "@nextui-org/react";
+import { paths } from "./routes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,7 +39,7 @@ function App() {
               </p>
               <Button
                 className="font-bold text-sm bg-blue-500 text-white rounded-none shadow-md"
-                href="contact.html"
+                href={paths.contact}
                 auto
                 data-aos="fade-right"
                 data-aos-duration="1000"

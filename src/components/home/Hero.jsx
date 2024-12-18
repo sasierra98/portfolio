@@ -1,3 +1,4 @@
+import { paths } from "../../routes";
 import { Button } from "../ui/Button";
 
 export const Hero = () => (
@@ -34,7 +35,7 @@ export const Hero = () => (
             Let’s connect and explore how I can contribute to your next project!
           </p>
           <a
-            href="contact.html"
+            href={paths.contact}
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="800"
